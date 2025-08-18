@@ -10,10 +10,12 @@ def modificar_consultar():
 
         with open('inventario.txt', 'r+', encoding='utf-8') as archivo:
             inventario = archivo.readlines()
+            producto_encontrado = False
 
             for i, item in enumerate(inventario):
                 if nombre_producto.lower() in item.lower():
                     print(f"Producto encontrado: {item.strip()}")
+                    producto_encontrado = True
 
                     accion = input("¿Qué deseas hacer? 1=Solo consultar, 2=Modificar: ")
 
@@ -61,11 +63,14 @@ def modificar_consultar():
                     else:
                         print("Opción inválida.")
                         return
-            print("No se realizaron cambios.")
+
+            if not producto_encontrado:
+                    print(f"El producto '{nombre_producto}' no se encontró en el inventario.")
 
     except FileNotFoundError:
         print("El archivo de inventario no fue encontrado.")
     except Exception as e:
         print(f"Ocurrió un error: {e}")
 
-    print()
+print()
+    
