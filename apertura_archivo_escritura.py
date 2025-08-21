@@ -50,4 +50,3 @@ def escritura():
     file.close()
     print("Inventario sobrescrito correctamente.")
     print()
-escritura()

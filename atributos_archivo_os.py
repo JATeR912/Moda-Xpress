@@ -25,4 +25,3 @@ def propiedades_inventario():
     except Exception as e:
         print(f"Ocurrio un error al leer el archivo: {e}")
     print()
-propiedades_inventario()
