@@ -17,7 +17,7 @@ menu= {1:"Consultar el inventario completo",
         5:"Modificar nombre del producto",
         6:"Eliminar productos del inventario",
         7:"Informacion propiedades del inventario",
-        8:"Crear nuevo inventario",
+        8:"Sobreescribir inventario",
         9:"Crear backup del inventario",
         0:"Salir"}
 
@@ -47,9 +47,8 @@ while seleccion != 0:
     elif seleccion == "6":
         eliminar_producto()
 
-#    elif seleccion == "7":
-    #    propiedades_inventario()
-
+    elif seleccion == "7":
+        propiedades_inventario()
 
     elif seleccion == "8":
         escritura()
