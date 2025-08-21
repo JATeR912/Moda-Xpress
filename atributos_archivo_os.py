@@ -14,12 +14,12 @@ def propiedades_inventario():
     archivo_inventario = input("\nIngrese el nombre del archivo del que desea conocer las propiedades(con la extension .txt): ").strip()
     try:
         with open(archivo_inventario, "r", encoding="utf-8") as file:
-        print("\nPropiedades del archivo:")
-        print(f"Nombre: {archivo_inventario}")
-        info = os.stat(archivo_inventario)
-        print(f"Tamaño: {info.st_size} bytes")
-        tiempo = time.ctime(info.st_mtime)
-        print(f"Última modificación: {tiempo}")
+            print("\nPropiedades del archivo:")
+            print(f"Nombre: {archivo_inventario}")
+            info = os.stat(archivo_inventario)
+            print(f"Tamaño: {info.st_size} bytes")
+            tiempo = time.ctime(info.st_mtime)
+            print(f"Última modificación: {tiempo}")
     except FileNotFoundError:
         print("Error: Archivo no encontrado.")
     except Exception as e:
