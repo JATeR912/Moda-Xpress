@@ -21,8 +21,6 @@ menu= {1:"Consultar el inventario completo",
         9:"Crear backup del inventario",
         0:"Salir"}
 
-print("Menu de Opciones")
-print(menu)
 seleccion = " "
 while seleccion != 0:
     print("Menu de Opciones")
