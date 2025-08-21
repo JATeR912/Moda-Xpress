@@ -1,7 +1,6 @@
 M4_AE6_ABPRO-Ejercicio grupal[Actividad Evaluada]
 
 Ejercicio grupal:
--Constanza Ahumada
 -Sofia Lagos
 -Johana Torres
 
