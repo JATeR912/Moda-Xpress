@@ -3,7 +3,7 @@ from apertura_archivo_lectura import mostrar_inventario #1.Apertura de archivo e
 from apertura_archivo_escritura import escritura #2.Apertura de archivo en modo escritura: Escribir datos de nuevos productos.
 from apertura_archivo_append import agregar_producto #3.Apertura de archivo en modo "append": Agregar productos sin eliminar los datos existentes.
 from apertura_archivo_modificar import modificar_consultar #4.Apertura de archivo en modo lectura y escritura: Modificar y consultar productos existentes en el inventario.
-from atributos_archivo_os import propiedades_inventario #5.Obtener atributos del archivo: Ver información sobre el archivo como el tamaño y la fecha de última modificación.
+#from atributos_archivo_os import propiedades_inventario #5.Obtener atributos del archivo: Ver información sobre el archivo como el tamaño y la fecha de última modificación.
 from leer_producto_especifico import buscar_producto #6.Leer un producto específico: Buscar por nombre o ID y mostrar los detalles del producto.
 from modificar_nombre import modificar_nombre #7.Modificar el nombre de un producto: Cambiar el nombre de un artículo en el inventario.
 from eliminar_producto import eliminar_producto #8.Eliminar un producto: Eliminar un producto del inventario.
@@ -47,8 +47,9 @@ while seleccion != 0:
     elif seleccion == "6":
         eliminar_producto()
 
-    elif seleccion == "7":
-        propiedades_inventario()
+#    elif seleccion == "7":
+    #    propiedades_inventario()
+
 
     elif seleccion == "8":
         escritura()
