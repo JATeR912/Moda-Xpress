@@ -35,7 +35,8 @@ def agregar_producto():
             print("La talla no puede estar vacía.")
     try:
         with open("inventario.txt", "a") as file:
-            file.write(f"{nombre_articulo}, {precio_articulo} USD, {cantidad_articulo} unidades, {talla_articulo}\n")
+            file.write("\n")
+            file.write(f"{nombre_articulo}, {precio_articulo} USD, {cantidad_articulo} unidades, {talla_articulo}")
         print(f"Producto {nombre_articulo} agregado correctamente.")
     except Exception as e:
         print(f"Error: No se pudo agregar el producto. Detalles: {e}")
