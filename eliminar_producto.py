@@ -2,6 +2,9 @@
 def eliminar_producto():
     nombre_producto = input("¿Qué producto quieres eliminar?: ")
     
+    if not nombre_producto:
+        print("Debes ingresar el nombre de un producto. Operación cancelada.")
+        return
     try:
         with open('inventario.txt', 'r') as archivo:
             inventario = archivo.readlines()
